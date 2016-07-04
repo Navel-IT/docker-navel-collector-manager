@@ -1,4 +1,4 @@
-navel-scheduler Dcokerfile
+navel-scheduler Dockerfile
 ==========================
 
 This repository contains **Dockerfile** of [navel-scheduler](https://github.com/Navel-IT/navel-scheduler) for [Docker](https://www.docker.com/)'s [automated build](https://hub.docker.com/r/navelit/navel-scheduler/) published to the public [Docker Hub Registry](https://registry.hub.docker.com/).
