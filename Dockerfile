@@ -8,8 +8,8 @@ WORKDIR /tmp
 
 RUN \
     git clone https://github.com/navel-it/navel-installation-scripts.git && \
-    bash navel-installation-scripts/navel-scheduler.sh -12 && \
-    bash navel-installation-scripts/navel-cli.sh -1
+    bash navel-installation-scripts/navel-scheduler.sh -12 master && \
+    bash navel-installation-scripts/navel-cli.sh -1 master
 
 USER navel-scheduler
 
