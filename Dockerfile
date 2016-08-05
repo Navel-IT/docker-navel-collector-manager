@@ -15,4 +15,4 @@ USER navel-scheduler
 
 ENTRYPOINT ["navel-scheduler"]
 
-CMD ["--log-file-path", "/dev/null", "/usr/local/etc/navel-scheduler/meta.yml"]
+CMD ["--log-file-path", "/dev/null", "--webservice-listener", "http://*:8080", "/usr/local/etc/navel-scheduler/meta.yml"]
