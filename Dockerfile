@@ -14,4 +14,4 @@ USER navel-scheduler
 
 ENTRYPOINT ["navel-scheduler"]
 
-CMD ["--log-file-path", "/dev/null", "/usr/local/etc/navel-scheduler/meta.yml"]
+CMD ["--log-severity", "debug", "--log-no-color", "/usr/local/etc/navel-scheduler/meta.yml"]
