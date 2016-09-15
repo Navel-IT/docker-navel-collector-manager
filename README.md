@@ -25,7 +25,7 @@ docker run -p 8080:8080 -p 8443:8443 -d --name navel-scheduler navelit/navel-sch
 Copyright
 ---------
 
-Copyright (C) 2015 Yoann Le Garff, Nicolas Boquet and Yann Le Bras
+Copyright (C) 2015-2016 Yoann Le Garff, Nicolas Boquet and Yann Le Bras
 
 License
 -------
