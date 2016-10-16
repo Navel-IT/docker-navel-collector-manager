@@ -6,9 +6,12 @@ EXPOSE 8080 8443
 
 WORKDIR /tmp
 
+ADD https://github.com/navel-it/navel-installation-scripts/archive/master.tar.gz .
+
 RUN \
-    git clone https://github.com/navel-it/navel-installation-scripts.git && \
-    bash navel-installation-scripts/navel-scheduler.sh -12 master
+    tar xvzf master.tar.gz && \
+    bash navel-installation-scripts-master/navel-scheduler.sh -12 master && \
+    rm -Rf *
 
 USER navel-scheduler
 
