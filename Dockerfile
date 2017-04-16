@@ -10,11 +10,11 @@ ADD https://github.com/navel-it/navel-installation-scripts/archive/master.tar.gz
 
 RUN \
     tar xvzf master.tar.gz && \
-    bash navel-installation-scripts-master/navel-scheduler.sh -12 master && \
+    bash navel-installation-scripts-master/navel-collector-manager.sh -12 master && \
     rm -Rf *
 
-USER navel-scheduler
+USER navel-collector-manager
 
-ENTRYPOINT ["navel-scheduler"]
+ENTRYPOINT ["navel-collector-manager"]
 
-CMD ["/usr/local/etc/navel-scheduler/meta.json"]
+CMD ["/usr/local/etc/navel-collector-manager/meta.json"]
